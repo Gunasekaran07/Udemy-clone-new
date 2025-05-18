@@ -1,13 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
 
 }
-body{
-     font-family: "Gabarito", sans-serif;
-     
+
+body {
+    font-family: "Gabarito", sans-serif;
+
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -16,14 +18,16 @@ body{
     align-items: center;
     position: sticky;
     top: 0;
-     background-color: white;
-     z-index: 1;
+    background-color: white;
+    z-index: 1;
 }
-.navbar-s1__title{
+
+.navbar-s1__title {
     color: purple;
 
 }
-.navbar-s2{
+
+.navbar-s2 {
     display: flex;
     padding: 10px;
     gap: 10px;
@@ -31,138 +35,182 @@ body{
     border-radius: 30px;
     width: 60%;
     align-items: center;
-   
 
-    
-    
+
+
+
 }
-.navbar-s2 input{
+
+.navbar-s2 input {
     width: 100%;
     border: none;
     font-size: 16px;
 }
-.navbar-s2 input:focus{
-  outline: none;
+
+.navbar-s2 input:focus {
+    outline: none;
 }
-.navbar-s3{
+
+.navbar-s3 {
     display: flex;
     gap: 20px;
     padding: 10px;
     align-items: center;
 
 }
-.categories{
+
+.categories {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     border-bottom: solid black 1px;
-   
-}
-.categories p{
-   background-color: purple;
-   padding: 10px;
-    color: white;
-    border-radius: 20px;
-    
+
 }
 
-.sales-image img{
+.categories p {
+    background-color: purple;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border:solid black 1px;
+    cursor: pointer;
+
+}
+.categories p:hover{
+    background-color: transparent;
+    color: black;
+}
+
+.sales-image img {
     width: 100%;
 
 }
 
 
-.recommended{
+.recommended {
     padding: 10px
 }
-.Recommended-container{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-top: 10px;
-  
-    
+
+.Recommended-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+
 }
-.class-cord{
+
+.class-cord {
     width: 250px;
 }
 
-.class-cord img{
+.class-cord img {
     height: 50%;
     width: 100%;
-    
+
 }
-.topics{
+
+.topics {
     padding: 10px;
 }
-.topics-container{
+
+.topics-container {
     display: flex;
     gap: 10px;
-margin-top: 10px;
-flex-wrap: wrap;
+    margin-top: 10px;
+    flex-wrap: wrap;
 }
-.topics-container p{
+
+.topics-container p {
     padding: 10px;
     border: solid black 1px;
     flex-grow: 1;
     flex-basis: 25%;
 }
-.popular{
-    padding:10px;
+
+.popular {
+    padding: 10px;
 }
-.popular-container{
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- margin-top: 10px;
+
+.popular-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
 
 
 }
-.footer-one{
-    display: flex ;
-    gap:  10px;
+
+.footer-one {
+    display: flex;
+    gap: 10px;
 }
-.footer-two{
+
+.footer-two {
     display: flex;
     justify-content: space-between;
     margin: 20px;
     align-items: center;
 }
-.footer{
+
+.footer {
     padding: 30px;
     background-color: black;
     color: white;
 }
-.footer-one p{
+
+.footer-one p {
     margin: 20px;
 
 }
-.offer-box{
+
+.offer-box {
     background-color: white;
     width: fit-content;
     height: 70px;
     position: absolute;
     left: 10%;
-    bottom: 260px; 
+    bottom: 260px;
     padding: 20px;
-    
     border: solid black 2px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
 }
 
-.offer-box p{
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+
+    }
+
+}
+
+.offer-box p {
     color: red;
-    
+
 }
-.sales-image{
+
+.sales-image {
     position: relative;
 }
-.mylearning{
+
+.mylearning {
     position: relative;
     cursor: pointer;
-        
+
 }
-.mylearning-popup{
+
+.mylearning-popup {
     position: absolute;
     border: solid black 2px;
     width: 150%;
@@ -172,7 +220,7 @@ flex-wrap: wrap;
     background-color: white;
     display: none;
 }
-.mylearning:hover .mylearning-popup{
-display: block;
-}
 
+.mylearning:hover .mylearning-popup {
+    display: block;
+}
