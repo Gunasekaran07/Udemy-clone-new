@@ -37,8 +37,6 @@ body {
     align-items: center;
 
 
-
-
 }
 
 .navbar-s2 input {
@@ -58,6 +56,9 @@ body {
     align-items: center;
 
 }
+.navbar-s4{
+    display: none;
+}
 
 .categories {
     display: flex;
@@ -72,11 +73,12 @@ body {
     padding: 10px;
     color: white;
     border-radius: 20px;
-    border:solid black 1px;
+    border: solid black 1px;
     cursor: pointer;
 
 }
-.categories p:hover{
+
+.categories p:hover {
     background-color: transparent;
     color: black;
 }
@@ -101,7 +103,9 @@ body {
 }
 
 .class-cord {
-    width: 250px;
+    flex-grow: 1;
+    flex-basis:20%;
+    margin: 10px;
 }
 
 .class-cord img {
@@ -223,4 +227,28 @@ body {
 
 .mylearning:hover .mylearning-popup {
     display: block;
+}
+
+@media screen and (max-width:800px){
+body{
+    font-size: 10px;
+}
+    
+}
+
+@media screen and (max-width:600px){
+.class-cord{
+    flex-basis: 40%;
+}
+.categories{
+    display: none;
+
+}
+.navbar-s2,.navbar-s3{
+    display: none;
+}
+.navbar-s4{
+    display: block;
+}
+    
 }
